@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tip Calculator</title>
+    <script type="text/javascript" src="calculator.js"></script>
+    <link rel="stylesheet" href="calculator.css">
+    <!--For the mobile-first use-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body class="bg-dark">
+<div class="container p-3 my-3">
+    <div class="row">
+        <div class="col-md-6 mx-auto">
+            <div class="card card-body text-center mt-5">
+                <div class="card-body">
+                    <h1 class="card-title">Tip Calculator</h1>
+                    <form>
+                        <div class="form-group">
+                            <label>Bill amount:<br>
+                                <div class="input-group">
+                                    <input type="text" placeholder="Bill amount" id="bill amount">
+                                </div>
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <label>
+                                Tip percent (%):<br>
+                                <div class="input-group">
+                                    <input type="text" placeholder="Tip percent" id="tip percent">
+                                </div>
+                            </label>
+                        </div>
+                        <button type="button" id="calculate" onclick="calculator()" class="btn-primary">Calculate!
+                        </button>
+                    </form>
+                    <div id="results">
+                        <br>
+                        <h2>Results</h2>
+                        <div id="tip amount" class="card-text">Tip amount: </div>
+                        <div id="bill total" class="card-text">Bill total: </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
